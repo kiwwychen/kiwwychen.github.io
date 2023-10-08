@@ -18,7 +18,7 @@
         bottom: 15px;
     }
     .titleWord{
-        width: 1000px;
+        width: 800px;
         border :5px  solid #fff1b9 ;
         padding: 10px 10px;
         margin: auto;
@@ -49,7 +49,7 @@
     
     /* 滑鼠移到導覽列時變成深底淺色 */
     .Navbar :hover {
-        background-color: rgb(115, 115, 115);
+        background-color: #ecd6c7;
         color: white;
         cursor: pointer;
     }
@@ -57,7 +57,7 @@
     .list{
         display: none;
         position: relative;
-        background-color: #f9f9f9;
+        background-color: #D09E88;
         color: #534847;
         border: 2px solid #fff1b9;
         width: 263px;
@@ -70,11 +70,11 @@
     }
     /*滑鼠移到導覽列時選單跳出來*/
     .NavWord:hover .list {
-        display: block;
+        display: inline-block;
         cursor: pointer;
     }
     .list:hover{
-        background-color: rgb(115, 115, 115);
+        background-color: #ecd6c7;
         cursor: pointer;
     }
     .BG {
@@ -88,6 +88,19 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    a:hover, a:visited, a:link, a:active {
+        color: #534847;
+        text-decoration: none;
+    }
+    .P{
+        cursor: pointer;
+    }
+    .框{
+        display: none;
+    }
+    .P:hover .框{
+        display: inline-block;
+    }
 </style>
 <body>
     <div class="titleBG">
@@ -99,69 +112,119 @@
     </div>
     <nav>
         <div class="Navbar">
+            <button class="NavWord">
+                <h2><font color="#534847"> 
+                    teaser video
+                </font></h2>
+                <div class="list">
+                    <h3>sitemap</h3>
+                </div>
+                <div class="list">
+                    <h3>teaser video</h3>
+                </div>
+            </button>
             <button class="NavWord"onclick="document.location='浮游植物.html'">
                 <h2><font color="#534847"> 
-                    浮游植物
-                </font></h2>  
+                    Phytoplankton
+                </font></h2>
                     <div class="list">
-                        <h3>Item 1-1</h3>
+                        <a href="浮游植物.html#Importance">
+                            <h3>Importance</h3>
+                        </a>
                     </div>
                     <div class="list">
-                        <h3>Item 1-2</h3>
+                        <a href="浮游植物.html#Climate change">
+                            <h3>Climate change</h3>
+                        </a>
                     </div>
                     <div class="list">
-                        <h3>Item 2-2</h3>
+                        <a href="浮游植物.html#Type">
+                            <h3>Type</h3>
+                        </a>
                     </div>
             </button>
             <button class="NavWord"onclick="document.location='動物.html'">
                 <h2><font color="#534847"> 
-                    動物
-                </font></h2>  
-                    <div class="list">
-                        <h3>Item 2-1</h3>
-                    </div>
-                    <div class="list">
-                        <h3>Item 2-2</h3>
-                    </div>
-                    <div class="list">
-                        <h3>Item 2-2</h3>
-                    </div>
-            </button>
-            <button class="NavWord">
-                <h2><font color="#534847"> 
-                    海水
-                </font></h2>  
-                    <div class="list">
-                        <h3>Item 3-1</h3>
-                    </div>
-                    <div class="list">
-                        <h3>Item 3-3</h3>
-                    </div>
-                    <div class="list">
-                        <h3>Item 2-2</h3>
-                    </div>
-            </button>
-            <button class="NavWord">
-                <h2><font color="#534847"> 
-                    影片
+                    sea animals
                 </font></h2>  
             </button>
             <button class="NavWord">
                 <h2><font color="#534847"> 
-                    遊戲
+                    sea water
                 </font></h2>  
+                    <div class="list">
+                        <a href="海水.html#Regulate">
+                            <h3>Regulate</h3>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a href="海水.html#OE">
+                            <h3>Ocean Evolve</h3>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a href="海水.html#GC">
+                            <h3>Global Climate</h3>
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a href="海水.html#GR">
+                            <h3>Gas Regulation</h3>
+                        </a>
+                    </div>
+            </button>
+            <button class="NavWord">
+                <h2><font color="#534847"> 
+                    game
+                </font></h2>
+                    <div class="list">
+                        <h3>Phytoplankton</h3>
+                    </div>
+                    <div class="list">
+                        <h3>sea animals</h3>
+                    </div>
+                    <div class="list">
+                        <h3>sea water</h3>
+                    </div>
             </button>
         </div>
     </nav>
     <div class="BG">
-            <img src="sun.gif" alt="" style="width:500px;height:500px;position: absolute;left: 1050px;bottom: 550px;">
-            <img src="鯨魚.gif" alt="" style="width:500px;height:500px;position: absolute;left: 1050px;bottom: 225px;transform:rotate(40deg)">
-            <img src="渦鞭毛藻-三.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
-            <img src="渦鞭毛藻.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
-            <img src="矽藻-側.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
-            <img src="矽藻-正.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
-            <img src="藍綠菌.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
-            <img src="鈣板藻-1.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
+        <div class="P">
+            <img src="sun.gif" alt="" style="width:500px;height:500px;position: absolute;left: 1000px;bottom: 500px;">
+            <div class="框">
+                <h2 style="position: absolute;left: 1000px;bottom: 850px;z-index: 2;">I'm sun</h2>
+                <img src="右方.gif" alt="" style="width:450px;height:450px;position: absolute;left: 850px;bottom: 600px;">
+            </div>
+        </div>
+        <div class="P">
+            <img src="鯨魚.gif" alt="" style="width:500px;height:500px;position: absolute;left: 850px;bottom: 225px;transform:rotate(40deg)">
+            <div class="框">
+                <h2 style="position: absolute;left: 800px;bottom: 700px;z-index: 2;">I'm whale</h2>
+                <img src="右圓.gif" alt="" style="width:400px;height:400px;position: absolute;left: 650px;bottom: 450px;">
+            </div>
+        </div>
+        <div class="P">
+            <img src="渦鞭毛藻-三.gif" alt="" style="width:200px;height:200px;position: absolute;left: 50px;bottom: 100px;">
+            <div class="框">
+                <h2 style="position: absolute;left: 200px;bottom: 350px;;z-index: 2;">I'm Dinoflagellata</h2>
+                <img src="左方.gif" alt="" style="width:450px;height:450px;position: absolute;left: 50px;bottom: 100px;">
+            </div>
+        </div>
+        <div class="P">
+            <img src="渦鞭毛藻.gif" alt="" style="width:200px;height:200px;position: absolute;left: 450px;bottom: 0px;">
+            <div class="框">
+                <h2 style="position: absolute;left: 250px;bottom: 250px;;z-index: 2;">I'm Dinoflagellata</h2>
+                <img src="右圓.gif" alt="" style="width:400px;height:400px;position: absolute;left: 150px;bottom: 0px;">
+            </div>
+        </div>
+            
+            
+            <img src="矽藻-側.gif" alt="" style="width:200px;height:200px;position: absolute;left: 700px;bottom: 350px;">
+            <img src="矽藻-正.gif" alt="" style="width:200px;height:200px;position: absolute;left: 1250px;bottom: 50px;">
+            <img src="藍綠菌.gif" alt="" style="width:200px;height:200px;position: absolute;left: 850px;bottom: 80px;">
+            <img src="鈣板藻-1.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 300px;">
+            <img src="磷蝦.gif" alt="" style="width:350px;height:350px;position: absolute;left: 350px;bottom: 90px;">
     </div>
 </body>
 
