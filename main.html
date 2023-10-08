@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring The Ocean</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        position: relative;
+        bottom: 15px;
+    }
+    .titleWord{
+        width: 1000px;
+        border :5px  solid #fff1b9 ;
+        padding: 10px 10px;
+        margin: auto;
+        background-color: #D09E88;
+        vertical-align:middle;
+        font-weight: bold;
+    }
+    .titleBG{
+        width: 1500px;
+        height: 200px;
+        display: flex;
+        background-color: #FADAD8;
+            }
+    .Navbar{
+        width: 1500px;
+        height: 40px;
+        display: flex;
+    }
+    /*導覽列*/
+    .NavWord{
+        width: 300px;
+        height: 60px;
+        border :2px  solid #fff1b9 ;
+        background-color: #D09E88;
+        display: block;
+        position: relative;
+    }
+    
+    /* 滑鼠移到導覽列時變成深底淺色 */
+    .Navbar :hover {
+        background-color: rgb(115, 115, 115);
+        color: white;
+        cursor: pointer;
+    }
+    /*下拉的選單*/
+    .list{
+        display: none;
+        position: relative;
+        background-color: #f9f9f9;
+        color: #534847;
+        border: 2px solid #fff1b9;
+        width: 263px;
+        height: 20px;
+        text-align: center;
+        right: 7px;
+        bottom: 5px;
+        padding: 12px 16px;
+        z-index: 2;
+    }
+    /*滑鼠移到導覽列時選單跳出來*/
+    .NavWord:hover .list {
+        display: block;
+        cursor: pointer;
+    }
+    .list:hover{
+        background-color: rgb(115, 115, 115);
+        cursor: pointer;
+    }
+    .BG {
+        position: relative;
+        top: 20px;
+        display: flex;
+        width: 1500px;
+        height: 1000px;
+        z-index: 1;
+        background-image: url('BG.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <div class="titleBG">
+        <div class="titleWord">
+            <h1><font size="7" color="#534847"> 
+            Exploring in the Ocean
+        </font></h1>  
+    </div>
+    </div>
+    <nav>
+        <div class="Navbar">
+            <button class="NavWord"onclick="document.location='浮游植物.html'">
+                <h2><font color="#534847"> 
+                    浮游植物
+                </font></h2>  
+                    <div class="list">
+                        <h3>Item 1-1</h3>
+                    </div>
+                    <div class="list">
+                        <h3>Item 1-2</h3>
+                    </div>
+                    <div class="list">
+                        <h3>Item 2-2</h3>
+                    </div>
+            </button>
+            <button class="NavWord"onclick="document.location='動物.html'">
+                <h2><font color="#534847"> 
+                    動物
+                </font></h2>  
+                    <div class="list">
+                        <h3>Item 2-1</h3>
+                    </div>
+                    <div class="list">
+                        <h3>Item 2-2</h3>
+                    </div>
+                    <div class="list">
+                        <h3>Item 2-2</h3>
+                    </div>
+            </button>
+            <button class="NavWord">
+                <h2><font color="#534847"> 
+                    海水
+                </font></h2>  
+                    <div class="list">
+                        <h3>Item 3-1</h3>
+                    </div>
+                    <div class="list">
+                        <h3>Item 3-3</h3>
+                    </div>
+                    <div class="list">
+                        <h3>Item 2-2</h3>
+                    </div>
+            </button>
+            <button class="NavWord">
+                <h2><font color="#534847"> 
+                    影片
+                </font></h2>  
+            </button>
+            <button class="NavWord">
+                <h2><font color="#534847"> 
+                    遊戲
+                </font></h2>  
+            </button>
+        </div>
+    </nav>
+    <div class="BG">
+            <img src="sun.gif" alt="" style="width:500px;height:500px;position: absolute;left: 1050px;bottom: 550px;">
+            <img src="鯨魚.gif" alt="" style="width:500px;height:500px;position: absolute;left: 1050px;bottom: 225px;transform:rotate(40deg)">
+            <img src="渦鞭毛藻-三.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
+            <img src="渦鞭毛藻.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
+            <img src="矽藻-側.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
+            <img src="矽藻-正.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
+            <img src="藍綠菌.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
+            <img src="鈣板藻-1.gif" alt="" style="width:200px;height:200px;position: absolute;left: 150px;bottom: 100px;">
+    </div>
+</body>
+
+</html>
